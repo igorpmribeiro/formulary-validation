@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ef7ab9fa88.js" crossorigin="anonymous"></script>
+  <title>Formulário</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <h2>Faça seu Cadastro <i class="fa-solid fa-rocket"></i></h2>
+    </div>
+
+    <form id="form" class="form" action="">
+      <div class="form-control">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Digite seu nome...">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <i class="fa-solid fa-circle-check"></i>
+        <small></small>
+      </div>
+      <div class="form-control">
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" placeholder="Digite seu e-mail...">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <i class="fa-solid fa-circle-check"></i>
+        <small></small>
+      </div>
+      <div class="form-control">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" placeholder="Digite sua senha...">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <i class="fa-solid fa-circle-check"></i>
+        <small></small>
+      </div>
+      <div class="form-control">
+        <label for="confirmPassword">Confirme sua Senha:</label>
+        <input type="password" id="confirmPassword" placeholder="Confirme sua senha...">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <i class="fa-solid fa-circle-check"></i>
+        <small></small>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

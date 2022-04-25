@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #E02924, #F73482);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, .5);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  overflow: hidden;
+}
+
+.form {
+  padding: 20px
+}
+
+.container .title {
+  text-transform: uppercase;
+}
+
+.title {
+  text-align: center;
+  background-color: #e9e9e9;
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px 0px 10px 10px;
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+  width: 100%;
+}
+
+button {
+  width: 60%;
+  background: linear-gradient(45deg, #E02924 0%, #f73482 100%);
+  color: #f2f2f2;
+  padding: 12px;
+  border-radius: 10px;
+  border: #F73482;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+}
+
+.form-control i {
+  position: absolute;
+  color: #000;
+  top: 35px;
+  right: 15px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+/* Erro e Sucesso */
+.form-control.error input {
+  border: 2px solid #E02924;
+}
+
+.form-control.success input {
+  border: 2px solid rgb(19, 184, 13);
+}
+
+.form-control.error i.fa-circle-exclamation {
+  color: #E02924;
+  visibility: visible;
+}
+
+.form-control.success i.fa-circle-check {
+  color: rgb(19, 184, 13);
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #E02924;
+}
