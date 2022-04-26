@@ -53,15 +53,15 @@ function checkInputs() {
     setErrorFor(email, "Digite um e-mail válido.");
   }
 
-  // const formControls = form.querySelectorAll(".form-control");
+   const formControls = form.querySelectorAll(".form-control");
 
-  // const formValid = [...formControls].every((formControl) => {
-  //   return (formControl.className = "form-control success");
-  // });
+   const formValid = [...formControls].every((formControl) => {
+     return (formControl.className === "form-control success");
+   });
 
-  // if (formValid) {
-  //   alert("Cadastro efetuado com sucesso!");
-  // }
+   if (formValid) {
+     alert("Cadastro efetuado com sucesso!");
+   }
 }
 
 function setErrorFor(input, message) {
