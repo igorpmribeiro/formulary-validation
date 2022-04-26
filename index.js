@@ -32,6 +32,8 @@ function checkInputs() {
 
   if (passwordValue === "") {
     setErrorFor(password, "Informe uma senha para seu usuário")
+  } else if (passwordValue.length < 8) {
+    setErrorFor(password, "A senha deve ter no minimo 8 caracteres.")
   } else {
     setSuccessFor(password);
   }
@@ -40,14 +42,27 @@ function checkInputs() {
     setErrorFor(checkPassword, "As senhas devem ser correspondentes.")
   } else if (checkPasswordValue === "") {
     setErrorFor(checkPassword, "Informe uma senha para seu usuário");
+  } else if (checkPasswordValue.length < 8) {
+    setErrorFor(checkPassword, "A senha deve ter no minimo 8 caracteres.")
   } else {
     setSuccessFor(checkPassword)
   }
+
 
   if (emailValue.match(pattern)) {
     setSuccessFor(email)
   } else {
     setErrorFor(email, "Digite um e-mail válido.")
+  }
+
+  const formControls = form.querySelectorAll(".form-control");
+
+  const formValid = [...formControls].every((formControl) => {
+    return formControl.className = "form-control success";
+  });
+
+  if (formValid) {
+    alert("Cadastro efetuado com sucesso!")
   }
 }
 
